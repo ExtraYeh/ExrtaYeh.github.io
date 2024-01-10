@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;600&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin-top: 0;
+    background-color: #f5f5f5;
+}
+section.all {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* 上方工具列 */
+header.header {
+    width: 1200px;
+    height: 100px;
+    font-family: 'Kalnia', serif;
+    background-color: #f7e5d2;
+    padding: 0px 30px;
+
+    /* 標籤左右排列 */
+    display: flex;
+    /* 元素上下居中 */
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+}
+header a {
+    color: #344e41;
+    display: block;
+    text-decoration: none;
+}
+header h1 {
+    font-size: 30px;
+    margin-right: auto;
+}
+ul.menu {
+    /* 選單橫向排列 */
+    display: flex;
+
+    /* 把圓點去掉 */
+    list-style: none;
+
+    /* 清除額外空間 */
+    padding: 0;
+    margin: 0;
+    gap: 12px;
+}
+
+/* 平時超連結的狀態 */
+ul.menu a {
+    /* background-color: aqua; */
+    padding: 10px 20px;
+    font-weight: 800;
+}
+
+/* :hover當滑鼠移動到超連結後產生的事件 */
+ul.menu a:hover {
+    /* background-color: black; */
+    /* border-radius: 20px; */
+    color: black;
+    text-decoration: underline;
+}
+
+div.person {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+div.icon {
+    width: 30px;
+    height: 30px;
+    background-image: url(images/person.png);
+    background-size: cover;
+}
+
+/* 上方大圖 */
+div.topImage {
+    width: 1200px;
+    height: 600px;
+    background-image: url(images/topPhoto.jpg);
+    background-size: cover;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+h5.text1 {
+    color: #000000;
+    font-size: 20px;
+    height: 0px;
+    margin-top: 150px;
+}
+
+h4.text2 {
+    color: #000000;
+    font-size: 40px;
+    height: 49px;
+}
+
+div.topImage ul {
+    width: 300px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+div.topImage ul button{
+    width: 125px;
+    height: 50px;
+    background-color: transparent;
+    font-size: 15px;
+    font-family: 'Kalnia', serif;
+    line-height: 40px;
+    text-align: center;
+    gap: 20px;
+    border-color: aliceblue;
+}
+
+/* 營業時間 */
+div.intro {
+    width: 1200px;
+    height: 50px;
+    background-color: #60695d;
+    color: #f7e5d2;
+    font-size: 15px;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* 圖片文字區 */
+div.mix1 {
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+div.mix1Text {
+    width: 600px;
+    height: 100%;
+}
+
+div.mix1-left {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+}
+
+div.mix1Text p.mix1-title{
+    font-size: 40px;
+}
+
+div.mix1Text p.mix1-subtitle{
+    font-size: 22px;
+}
+
+div.mix1Text p.mix1-intro{
+    font-size: 18px;
+}
+
+div.mix1Text button{
+    width: 125px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+div.mix1Image {
+    width: 600px;
+    height: 100%;
+    background-image: url(images/eat.jpg);
+}
+
+/* 圖片文字區2 */
+div.mix2 {
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+div.mix2Text {
+    width: 600px;
+    height: 100%;
+}
+
+div.mix2-left {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+}
+
+div.mix2Text p.mix2-title{
+    font-size: 40px;
+}
+
+div.mix2Text p.mix2-subtitle{
+    font-size: 22px;
+}
+
+div.mix2Text p.mix2-intro{
+    font-size: 18px;
+}
+
+div.mix2Text button{
+    width: 125px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+div.mix2Image {
+    width: 600px;
+    height: 100%;
+    background-image: url(images/drink.jpg);
+}
+
+/* 圖片文字區3 */
+div.mix3 {
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+div.mix3Text {
+    width: 600px;
+    height: 100%;
+}
+
+div.mix3-left {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+}
+
+div.mix3Text p.mix3-title{
+    font-size: 40px;
+}
+
+div.mix3Text p.mix3-subtitle{
+    font-size: 22px;
+}
+
+div.mix3Text p.mix3-intro{
+    font-size: 18px;
+}
+
+div.mix3Text button{
+    width: 125px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+div.mix3Image {
+    width: 600px;
+    height: 100%;
+    background-image: url(images/enjoy.jpg);
+}
+
+/* 底部圖片區 */
+div.bottom-image {
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+}
+
+div.bottom-image .image1{
+    width: 400px;
+    height: 100%;
+    background-image: url(images/bottom2.jpg);
+    background-size: cover;
+}
+div.bottom-image .image2{
+    width: 400px;
+    height: 100%;
+    background-image: url(images/bottom1.jpg);
+    background-size: cover;
+}
+div.bottom-image .image3{
+    width: 400px;
+    height: 100%;
+    background-image: url(images/bottom3.jpg);
+    background-size: cover;
+}
+
+div.address {
+    width: 1200px;
+    height: 250px;
+    background-image: url(images/address.jpg);
+    background-size: cover;
+}
